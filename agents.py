@@ -1,7 +1,6 @@
-# agents.py
-from quant import get_stock_data
 from researcher import get_latest_news
 from analyst import analyze_sentiment
+from quant import get_stock_data
 
 def run_analysis(ticker):
     stock_data = get_stock_data(ticker)
