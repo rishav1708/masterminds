@@ -1,9 +1,12 @@
-# app.py
-import streamlit as st
-import requests
-import plotly.express as px
-import yfinance as yf
+# Use direct imports (all files should be in the same folder)
+from researcher import get_latest_news
+from analyst import analyze_sentiment
 from agents import run_analysis
+from quant import get_stock_data
+import plotly.express as px
+import streamlit as st
+import yfinance as yf
+
 
 st.set_page_config(page_title="MarketMinds", page_icon="📈", layout="wide")
 st.title("MarketMinds: Real-Time Financial Analyst")
